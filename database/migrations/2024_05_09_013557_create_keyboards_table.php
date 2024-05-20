@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('keyboards', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->nullable();
             $table->string('brand');
             $table->string('model');
-            $table->enum('type', ['Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller']);
+            $table->enum('type', ['Synthesizer Workstation', 'Expandable Synthesizer', 'Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller']);
             $table->string('color');
+            $table->float('price');
             // $table->date('manufactured_date');
             // $table->integer('number_of_keys');
             // $table->string('weight');
@@ -25,7 +27,6 @@ return new class extends Migration
             // $table->string('polyphony');
             // $table->string('input');
             // $table->string('output');
-            $table->float('price');
             // $table->string('power_requirements');
             $table->timestamps();
         });

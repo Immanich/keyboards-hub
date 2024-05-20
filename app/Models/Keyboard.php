@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Keyboard extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'brand',
+        'model',
+        'type',
+        'color',
+        'price',
+    ];
 }

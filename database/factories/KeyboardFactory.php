@@ -26,7 +26,7 @@ class KeyboardFactory extends Factory
     // $table->enum('type', ['Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller']);
     // $table->string('color');
     // $table->float('price');
-
+            
             'brand' => fake() -> randomElement($brand),
             'model' => fake() -> randomElement($model),
             'type' => fake() -> randomElement($type),
