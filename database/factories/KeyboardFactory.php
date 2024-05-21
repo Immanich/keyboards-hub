@@ -20,13 +20,7 @@ class KeyboardFactory extends Factory
         $type = ['Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller'];
         $color = ['Black', 'Red', 'White'];
         $model = ['Yamaha DGX-660', 'Korg Pa-700', 'Korg Pa-1000', 'Roland BK-9', 'Roland BK-5'];
-        return [
-                // $table->string('brand');
-    // $table->string('model');
-    // $table->enum('type', ['Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller']);
-    // $table->string('color');
-    // $table->float('price');
-            
+        return [       
             'brand' => fake() -> randomElement($brand),
             'model' => fake() -> randomElement($model),
             'type' => fake() -> randomElement($type),

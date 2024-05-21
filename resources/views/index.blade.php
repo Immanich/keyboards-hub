@@ -23,23 +23,10 @@
         <div class="content-wrapper grid grid-cols-3 gap-4">
             @foreach ($keyboards as $k)
                 <a href="{{ route('Keyboard.detail', ['model' => $k->model]) }}" class="p-8 border border-black border-solid my-4 shadow-md">
-                    {{-- <div>
-                    </div> --}}
                     <img src="{{ asset($k->image) }}" alt="A picture of {{ $k->brand }} {{ $k->model }}" class="mb-4" style="min-width: 200px; min-height: 100px;">
                     <div>Brand: {{$k->brand}}</div>
                     <div>Model: {{$k->model}}</div>
                     <div>Type: {{$k->type}}</div>
-                    {{-- <div>Color: {{$k->color}}</div>
-                    <div>Price: ₱{{ number_format($k->price, 2) }}</div> --}}
-                    {{-- <div class="qrcode">
-                        
-                        {!! QrCode::size(200)->encoding('UTF-8')->generate(
-                            'Brand: '.$k->brand."\n".   
-                            'Model: '.$k->model."\n".   
-                            'Type: '.$k->type."\n".
-                            'Color: '.$k->color."\n".
-                            'Price: ₱'.$k->price) !!}
-                    </div> --}}
                 </a>
             @endforeach
         </div>

@@ -13,11 +13,6 @@ class KeyboardSeeder extends Seeder
      */
     public function run(): void
     {
-        // $table->string('brand');
-        // $table->string('model');
-        // $table->enum('type', ['Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller']);
-        // $table->string('color');
-        // $table->float('price');
         $keyboards = [
             [
                 'image' => 'images/kross-dark-blue.png',

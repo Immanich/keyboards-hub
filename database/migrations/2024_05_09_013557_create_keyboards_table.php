@@ -19,15 +19,6 @@ return new class extends Migration
             $table->enum('type', ['Synthesizer Workstation', 'Expandable Synthesizer', 'Digital Piano', 'Synthesizer', 'Workstation Keyboard', 'Stage Piano', 'Organ', 'Electric Piano', 'MIDI Controller']);
             $table->string('color');
             $table->float('price');
-            // $table->date('manufactured_date');
-            // $table->integer('number_of_keys');
-            // $table->string('weight');
-            // $table->string('dimension');
-            // $table->string('features');
-            // $table->string('polyphony');
-            // $table->string('input');
-            // $table->string('output');
-            // $table->string('power_requirements');
             $table->timestamps();
         });
     }

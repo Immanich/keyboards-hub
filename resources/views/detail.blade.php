@@ -3,7 +3,7 @@
 @section('content')
     <div class="container bg-gray-200 w-full max-w-full h-max p-8">
         <div class="heading">
-            <div class="wrapper px-32 py-16 flex content-center justify-center">
+            <div class="wrapper px-32 py-8 flex content-center justify-center">
                 <table class="w-1/2">
                     <thead class="w-1/4">
                         <tr class="border border-black border-solid">

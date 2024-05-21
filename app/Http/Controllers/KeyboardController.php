@@ -13,14 +13,9 @@ class KeyboardController extends Controller
     }
 
     public function index() {
-        // $keyboards = Keyboard::orderBy('brand')->get();
-
-        // return view('index', [
-        //     'keyboards' => $keyboards
-        // ]);
         $keyboards = Keyboard::all();
 
-    return view('index', compact('keyboards'));
+        return view('index', compact('keyboards'));
     }
 
     public function detail($model) {
@@ -62,7 +57,6 @@ class KeyboardController extends Controller
             'brand' => 'required',
             'model' => 'required',
             'type' => ['required', 'string', 'max:50'],
-            // 'type' => ['required', 'string', 'max:50', 'in:mechanical,membrane,ergonomic'],
             'color' => 'required',
             'price' => 'required|numeric',
         ]);
